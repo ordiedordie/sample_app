@@ -3,22 +3,17 @@
 <head>
 	<title>Ruby on Rails Tutorial Sample App | <%= @title %></title>
 	<%= csrf_meta_tag %>
-	<%= stylesheet_link_tag 'bootstrap', :media => 'screen' %>
-	<%= stylesheet_link_tag 'bootstrap', :media => 'print' %>
+	<%= render 'layouts/stylesheets'%>	
 </head>
 	<body>
 		<div class="container">
-		<header>
-			<!--<%= image_tag("rails.png", :alt =>"Sample App", :class =>"round")%>-->
-			<ul class="nav nav-pills">
-					<li class="active"><%= link_to "Home", '#' %></li>
-					<li><%= link_to "Help", '#' %></li>
-					<li><%= link_to "Sign in", '#' %></li>					
-			</ul>
-		</header>
+		<%=render 'layouts/header'%>
+		<div class="hero-unit">
 		<section class="round">
 			<%= yield %>
 		</section>
+		</div>
+		<%= render 'layouts/footer'%>
 		</div>
 	</body>
 </html>
