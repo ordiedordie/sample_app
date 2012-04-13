@@ -23,12 +23,20 @@ end
 gem 'jquery-rails'
 
 group :development do
-    gem 'rspec-rails'
+  gem 'rspec-rails'
+  gem 'guard'
+  gem 'guard-rspec'
 end
-  
-group :development do
-    gem 'rspec-rails'
+ 
+group :test do
+  gem 'rspec'
+  gem 'growl'
+  gem 'rb-fsevent'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'webrat'
 end
+
 
 
 # To use ActiveModel has_secure_password
