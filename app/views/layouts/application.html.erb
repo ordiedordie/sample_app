@@ -7,6 +7,18 @@
 	<%= stylesheet_link_tag 'bootstrap', :media => 'print' %>
 </head>
 	<body>
-		<%= yield %>
+		<div class="container">
+		<header>
+			<!--<%= image_tag("rails.png", :alt =>"Sample App", :class =>"round")%>-->
+			<ul class="nav nav-pills">
+					<li class="active"><%= link_to "Home", '#' %></li>
+					<li><%= link_to "Help", '#' %></li>
+					<li><%= link_to "Sign in", '#' %></li>					
+			</ul>
+		</header>
+		<section class="round">
+			<%= yield %>
+		</section>
+		</div>
 	</body>
 </html>
