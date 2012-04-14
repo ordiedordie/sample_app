@@ -37,15 +37,15 @@ end
   end
   
   
-  describe "GET 'about'" do
+  describe "GET 'help'" do
     it "should be successfull" do
-      get 'about'
+      get 'help'
       response.should be_success
     end
     
       it "should have the right title" do
-        get 'about'
-        response.should have_selector("title", :content => "#{@base_title} | About")
+        get 'help'
+        response.should have_selector("title", :content => "#{@base_title} | Help")
     end
   end
 
