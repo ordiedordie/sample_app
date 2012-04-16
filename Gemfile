@@ -21,6 +21,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'gravatar_image_tag'
 
 group :development do
   gem 'rspec-rails'
