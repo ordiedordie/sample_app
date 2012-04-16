@@ -36,6 +36,7 @@ group :test do
   gem 'spork-rails'
   gem 'guard-spork'
   gem 'webrat'
+  gem 'factory_girl_rails', '1.0'
 end
 
 group :production do
